@@ -1,0 +1,31 @@
+﻿@{ 
+    Layout = null;
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <form action="/api/customers" method="post">
+    <input name="firstName" placeholder="First Name" />
+    <input name="lastName" placeholder="Last Name" />
+        <input name="shippingAddress.street" placeholder="Shipping Address Street" />
+        <input name="shippingAddress.city" placeholder="Shipping Address City" />
+        <input name="billingAddress.street" placeholder="Billing Address Street" />
+        <input name="billingAddress.city" placeholder="Billing Address City" />
+        <input type="submit"  value="Submit" />
+
+    </form>
+    <!--
+        var customer = {
+    "firstName" : valueOfFirstNameInput,
+        "lastName" : valueOfLastNameInput,
+        }
+        customer.firstName
+        customer.lastName
+        customer.shippingAddress.street
+
+        -->
+
+    </body>
+</html>
